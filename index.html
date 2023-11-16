@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.0/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="text" data-splitting="">
+                Srećan Rođendan, Jackooo! 😋🙈💕
+              </div>
+              <div class="presents">
+                <div class="present orange">
+                  <div class="lid"></div>
+                  <div class="box"></div>
+                  <div class="bow"></div>
+                  <div class="ribbon"></div>
+                </div>
+                <div class="present blue">
+                  <div class="lid"></div>
+                  <div class="box"></div>
+                  <div class="bow"></div>
+                  <div class="ribbon"></div>
+                </div>
+                <div class="present green">
+                  <div class="lid"></div>
+                  <div class="box"></div>
+                  <div class="bow"></div>
+                  <div class="ribbon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="message">
+              <p>
+                Maji znak pažnje za jednu majuu i meni mnogo mnogoo mmmnogooo
+                djagu i bitnu osobu 😊❤️
+              </p>
+              <p>
+                O željama da ni ne govorim, jer su samo one najbolje i
+                najiskrenije 😘💯
+              </p>
+              <p></p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="message">
+              <p>
+                A prilika za sticanje prvenstveno prijatelja kao sto si ti se
+                stiče jednom u životu, hvala ti do neba na njoj! 🌍🩵
+              </p>
+              <p>
+                I samo da ti javim da je ja ne ispuštam, ni za živu glavu! 😘
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="message">
+              <p>You can count on me 24/7 365d/y, and you know that 🫂</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="images image-one">
+              <a href="./dinopdf1.pdf" download>
+                <img src="./dino1.png" alt="dino1" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="images image-two">
+              <a href="./dinopdf2.pdf" download>
+                <img src="./dino2.png" alt="dino2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js" defer></script>
+
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+      const swiper = new Swiper('.mySwiper', {
+        effect: 'cards',
+        grabCursor: true,
+      })
+    </script>
+  </body>
+</html>
